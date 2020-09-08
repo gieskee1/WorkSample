@@ -19,7 +19,10 @@ Please spend no more than 1-2 hours working on this. We know you're busy!
 ### Running Online
 
 The easiest way to complete the exercise is totally online (for free!) via glitch.com.
-Just click this button to create a copy of the git repo to "remix" on Glitch:
+
+**First, sign in or create a Glitch account**: https://glitch.com/signin
+
+Once you're signed in, click this button to create a copy of the git repo to "remix":
 
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/switcherstudio-work-sample)
 
