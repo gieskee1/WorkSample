@@ -1,20 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FriendCard from "./FriendCard";
 import "./App.css";
 
 function App() {
-  const [friends] = useState([
-    {
-      id: 1,
-      name: "John Doe",
-      email: "jdoe123456789@yahoo.com",
-      activity: "Learn to juggle",
-      type: "recreational",
-    },
-  ]);
 
-  /** Step 1: Fetch friends from the api by calling "/api/friends".
-   */
+
+    const [friends, setFriends] = useState([]);
+
+    /** Step 1: Fetch friends from the api by calling "/api/friends".
+     */
+    /*update friend state using hook*/
+    useEffect(() => {
+        const fetchFriends = async () => {
+            const response = await fetch('/api/friends');
+            const json = await response.json();
+            setFriends(json);
+        };
+        fetchFriends();
+    }, []);
+
 
   return (
     <div className="App">
